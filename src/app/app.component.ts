@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'QR-code-reader';
+  title = 'QR-code-generator';
+
+  public QrCode!: string;
+
+  constructor() {
+    this.QrCode = 'My First QR code';
+  }
 }
